@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.koodie.tasks2do">
+
+    <application
+        android:name=".Utils.OneSignalUtil"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.koodie.tasks2do.Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.koodie.tasks2do.Activities.MainActivity" />
+        <activity android:name="com.koodie.tasks2do.Activities.LoginActivity">
+        </activity>
+        <activity android:name="com.koodie.tasks2do.Activities.SignUpActivity">
+        </activity>
+    </application>
+
+</manifest>

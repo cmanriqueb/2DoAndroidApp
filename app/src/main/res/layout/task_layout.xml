@@ -1,0 +1,110 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/checkboxLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/todoText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                tools:text="Go to the market and bring vegetables immediately today."
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+            <CheckBox
+                android:id="@+id/todoCheckBox"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:button="@drawable/large_checkbox"
+                android:padding="10dp"
+                android:textSize="20dp"
+                tools:text="Go to the market and bring vegetables immediately today."
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/priorityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkboxLL"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Priority: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/priorityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkboxLL"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/priorityLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="High" />
+
+        <TextView
+            android:id="@+id/dueDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priorityValue"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Due Date: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/dueDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/priorityValue"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/dueDateLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Due Date" />
+
+
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dueDateLabel"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="Location: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/locationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationLabel"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-25dp"
+            android:layout_toEndOf="@+id/locationLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Home" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

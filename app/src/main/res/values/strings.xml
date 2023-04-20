@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">2Do</string>
+    <string name="save">Save</string>
+    <string name="new_task">New Task</string>
+    <string name="tasks">Tasks</string>
+    <!-- Other strings -->
+    <string-array name="priorities">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string name="location">Location</string>
+    <string name="priority_prompt">Select Priority Level</string>
+
+</resources>
